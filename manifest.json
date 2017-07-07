@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Wired Normalizer",
+    "version": "1.2.0",
+    "description": "WIRED.jp の記事に含まれる「ヴ」を、適当なバ行の文字に変換します。",
+    "content_scripts": [
+        {
+            "matches": ["http://wired.jp/*"],
+            "js": [
+                "jquery.min.js",
+                "main.js"
+            ]
+        }
+    ]
+}
